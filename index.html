@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晨間功課｜我的市場追蹤手冊</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html">晨間功課</a>
+    <span class="site-sub">我的市場追蹤手冊</span>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <h1>每天做功課前，先知道要看什麼</h1>
+      <p>這裡整理我追蹤的每一個標的：為什麼追蹤、每次要看哪些數據、去哪裡看。一個標的一頁，格式都一樣。</p>
+    </section>
+
+    <!-- 類別篩選：新增類別時，這裡和 AGENTS.md 的類別表要一起更新 -->
+    <nav class="filters" aria-label="類別篩選">
+      <button class="chip is-active" data-filter="all">全部</button>
+      <button class="chip" data-filter="holding">持股</button>
+      <button class="chip" data-filter="focus">重點追蹤</button>
+      <button class="chip" data-filter="market">市場數據</button>
+      <button class="chip" data-filter="macro">總經指標</button>
+    </nav>
+
+    <!-- 卡片區：重點強調的卡片排最前面，其餘依加入順序排列 -->
+    <section class="cards" id="cards">
+      <a class="card card--focus" href="targets/tsmc.html" data-category="holding">
+        <div class="badges">
+          <span class="badge badge--holding">持股</span>
+          <span class="badge badge--focus">🔥 重點強調</span>
+        </div>
+        <h3>台積電</h3>
+        <p class="code">2330.TW / TSM</p>
+        <p class="oneliner">全球最大的晶圓代工廠，台股權值最大的公司，同時在美國以 ADR 掛牌。</p>
+        <p class="meta">每次要看 6 項數據</p>
+      </a>
+      <a class="card card--focus" href="targets/nvidia.html" data-category="focus">
+        <div class="badges">
+          <span class="badge badge--focus">重點追蹤</span>
+          <span class="badge badge--focus">🔥 重點強調</span>
+        </div>
+        <h3>NVIDIA</h3>
+        <p class="code">NVDA</p>
+        <p class="oneliner">設計 GPU 與 AI 運算晶片的美國公司，是 AI 伺服器供應鏈的核心。</p>
+        <p class="meta">每次要看 6 項數據</p>
+      </a>
+      <a class="card" href="targets/us-indices.html" data-category="market">
+        <div class="badges">
+          <span class="badge badge--market">市場數據</span>
+        </div>
+        <h3>美股主要指數</h3>
+        <p class="code">^DJI / ^GSPC / ^IXIC / ^SOX</p>
+        <p class="oneliner">道瓊、S&amp;P 500、那斯達克與費城半導體四個指數，用來看美股前一晚的整體表現。</p>
+        <p class="meta">每次要看 5 項數據</p>
+      </a>
+      <a class="card" href="targets/us-treasury.html" data-category="macro">
+        <div class="badges">
+          <span class="badge badge--macro">總經指標</span>
+        </div>
+        <h3>美債殖利率</h3>
+        <p class="code">US2Y / US10Y</p>
+        <p class="oneliner">美國公債的殖利率，反映市場對利率與景氣的預期，是全球資產定價的基準。</p>
+        <p class="meta">每次要看 4 項數據</p>
+      </a>
+      <a class="card" href="targets/tx-night.html" data-category="market">
+        <div class="badges">
+          <span class="badge badge--market">市場數據</span>
+        </div>
+        <h3>台指期夜盤</h3>
+        <p class="code">TX（盤後交易）</p>
+        <p class="oneliner">台股指數期貨的盤後交易時段，可以看出台股收盤後到隔天開盤前的市場變化。</p>
+        <p class="meta">每次要看 4 項數據</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>本站是個人做功課用的追蹤手冊，只整理「看什麼、去哪裡看」，不提供投資建議，也不預測漲跌。</p>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
