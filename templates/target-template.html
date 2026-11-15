@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{名稱}}｜晨間功課</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="../index.html">晨間功課</a>
+    <span class="site-sub">我的市場追蹤手冊</span>
+  </header>
+
+  <main class="page">
+    <a class="back" href="../index.html">← 回到所有追蹤標的</a>
+
+    <!-- 區塊 0：標題區 -->
+    <section class="hero">
+      <div class="badges">
+        <!-- 類別代碼只能是 holding / focus / market / macro，中文名稱見 AGENTS.md -->
+        <span class="badge badge--{{類別代碼}}">{{類別中文}}</span>
+        <!-- 只有「重點強調」的標的才保留下一行，否則整行刪除 -->
+        <span class="badge badge--focus">🔥 重點強調</span>
+      </div>
+      <h1>{{名稱}}</h1>
+      <p class="code">{{代號}}</p>
+      <p class="oneliner">{{一句話說明：這是什麼，40 字以內}}</p>
+    </section>
+
+    <!-- 區塊 1：為什麼追蹤（2 到 3 點） -->
+    <section class="block" id="why">
+      <h2>1. 為什麼我要追蹤</h2>
+      <ul>
+        <li>{{理由}}</li>
+        <li>{{理由}}</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 2：每次要看的數據（3 到 6 列） -->
+    <section class="block" id="checks">
+      <h2>2. 每次要看的數據</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>項目</th><th>看什麼</th><th>哪裡看</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>{{項目}}</td><td>{{看什麼：只描述要看的數據，不寫漲跌判斷}}</td><td>{{對應區塊 3 的來源名稱}}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 區塊 3：資料來源（2 到 5 個，官方來源優先；標籤只能是「官方」或「行情」） -->
+    <section class="block" id="sources">
+      <h2>3. 資料來源</h2>
+      <ul class="links">
+        <li><a href="{{網址}}" target="_blank" rel="noopener">{{來源名稱}}</a> <span class="tag">{{官方或行情}}</span></li>
+      </ul>
+    </section>
+
+    <!-- 區塊 4：連動標的（1 到 3 個，只能連到 targets/ 裡已存在的頁面） -->
+    <section class="block" id="related">
+      <h2>4. 連動標的</h2>
+      <ul>
+        <li><a href="{{slug}}.html">{{名稱}}</a>：{{一句話說明兩者的關係}}</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 5：什麼時候有新數據（2 到 4 點，時間一律寫台灣時間） -->
+    <section class="block" id="timing">
+      <h2>5. 什麼時候有新數據</h2>
+      <ul>
+        <li><strong>{{事件}}</strong>：{{時間}}</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>本站是個人做功課用的追蹤手冊，只整理「看什麼、去哪裡看」，不提供投資建議，也不預測漲跌。</p>
+  </footer>
+</body>
+</html>

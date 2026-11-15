@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>美債殖利率｜晨間功課</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="../index.html">晨間功課</a>
+    <span class="site-sub">我的市場追蹤手冊</span>
+  </header>
+
+  <main class="page">
+    <a class="back" href="../index.html">← 回到所有追蹤標的</a>
+
+    <!-- 區塊 0：標題區 -->
+    <section class="hero">
+      <div class="badges">
+        <span class="badge badge--macro">總經指標</span>
+      </div>
+      <h1>美債殖利率</h1>
+      <p class="code">US2Y / US10Y</p>
+      <p class="oneliner">美國公債的殖利率，反映市場對利率與景氣的預期，是全球資產定價的基準。</p>
+    </section>
+
+    <!-- 區塊 1：為什麼追蹤 -->
+    <section class="block" id="why">
+      <h2>1. 為什麼我要追蹤</h2>
+      <ul>
+        <li>殖利率上升時，成長股與科技股的評價通常承受壓力，會影響我的持股。</li>
+        <li>2 年期反映對聯準會利率政策的預期，10 年期反映對長期景氣與通膨的看法。</li>
+        <li>它是判斷「今天市場在擔心什麼」最基本的總經數據。</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 2：每次要看的數據 -->
+    <section class="block" id="checks">
+      <h2>2. 每次要看的數據</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>項目</th><th>看什麼</th><th>哪裡看</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2 年期殖利率</td><td>收盤數值與單日變動</td><td>FRED DGS2</td></tr>
+            <tr><td>10 年期殖利率</td><td>收盤數值與單日變動</td><td>FRED DGS10</td></tr>
+            <tr><td>10 年減 2 年利差</td><td>利差數值與方向（正值或負值）</td><td>FRED T10Y2Y</td></tr>
+            <tr><td>聯準會會議日期</td><td>下一次 FOMC 會議是哪一天</td><td>聯準會行事曆</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 區塊 3：資料來源 -->
+    <section class="block" id="sources">
+      <h2>3. 資料來源</h2>
+      <ul class="links">
+        <li><a href="https://fred.stlouisfed.org/series/DGS10" target="_blank" rel="noopener">FRED：10 年期公債殖利率 DGS10</a> <span class="tag">官方</span></li>
+        <li><a href="https://fred.stlouisfed.org/series/DGS2" target="_blank" rel="noopener">FRED：2 年期公債殖利率 DGS2</a> <span class="tag">官方</span></li>
+        <li><a href="https://fred.stlouisfed.org/series/T10Y2Y" target="_blank" rel="noopener">FRED：10 年減 2 年利差 T10Y2Y</a> <span class="tag">官方</span></li>
+        <li><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" target="_blank" rel="noopener">聯準會 FOMC 會議行事曆</a> <span class="tag">官方</span></li>
+      </ul>
+    </section>
+
+    <!-- 區塊 4：連動標的 -->
+    <section class="block" id="related">
+      <h2>4. 連動標的</h2>
+      <ul>
+        <li><a href="us-indices.html">美股主要指數</a>：殖利率與股市常呈現連動</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 5：什麼時候有新數據 -->
+    <section class="block" id="timing">
+      <h2>5. 什麼時候有新數據</h2>
+      <ul>
+        <li><strong>每日數據</strong>：美國交易日收盤後更新，FRED 通常隔一個工作日上線</li>
+        <li><strong>FOMC 會議</strong>：一年 8 次，會後公布利率決議</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>本站是個人做功課用的追蹤手冊，只整理「看什麼、去哪裡看」，不提供投資建議，也不預測漲跌。</p>
+  </footer>
+</body>
+</html>

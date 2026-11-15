@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台積電｜晨間功課</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="../index.html">晨間功課</a>
+    <span class="site-sub">我的市場追蹤手冊</span>
+  </header>
+
+  <main class="page">
+    <a class="back" href="../index.html">← 回到所有追蹤標的</a>
+
+    <!-- 區塊 0：標題區 -->
+    <section class="hero">
+      <div class="badges">
+        <span class="badge badge--holding">持股</span>
+        <span class="badge badge--focus">🔥 重點強調</span>
+      </div>
+      <h1>台積電</h1>
+      <p class="code">2330.TW / TSM</p>
+      <p class="oneliner">全球最大的晶圓代工廠，台股權值最大的公司，同時在美國以 ADR 掛牌。</p>
+    </section>
+
+    <!-- 區塊 1：為什麼追蹤 -->
+    <section class="block" id="why">
+      <h2>1. 為什麼我要追蹤</h2>
+      <ul>
+        <li>它是我投資組合中比重最大的個股，股價變動對我的影響最直接。</li>
+        <li>它占台股大盤的權重很高，看懂它就大致看懂當天台股的方向。</li>
+        <li>ADR 在美股交易，收盤時間比台股開盤早，可以當作隔天開盤前的參考。</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 2：每次要看的數據 -->
+    <section class="block" id="checks">
+      <h2>2. 每次要看的數據</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>項目</th><th>看什麼</th><th>哪裡看</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>台股收盤價與漲跌</td><td>前一個交易日的收盤價、漲跌幅、成交量</td><td>Yahoo 股市 2330</td></tr>
+            <tr><td>ADR 收盤價與漲跌</td><td>TSM 在美股的收盤價與漲跌幅</td><td>Yahoo Finance TSM</td></tr>
+            <tr><td>ADR 折溢價</td><td>ADR 價格 ÷ 5 × 美元兌台幣匯率，與台股收盤價比較（1 單位 ADR = 5 股普通股）</td><td>自行計算</td></tr>
+            <tr><td>外資買賣超</td><td>外資當日買超或賣超的張數</td><td>證交所</td></tr>
+            <tr><td>月營收</td><td>當月營收、月增率、年增率</td><td>公開資訊觀測站</td></tr>
+            <tr><td>法說會重點</td><td>營收與毛利率、資本支出、下一季展望</td><td>台積電投資人關係</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 區塊 3：資料來源 -->
+    <section class="block" id="sources">
+      <h2>3. 資料來源</h2>
+      <ul class="links">
+        <li><a href="https://tw.stock.yahoo.com/quote/2330.TW" target="_blank" rel="noopener">Yahoo 股市：台積電 2330</a> <span class="tag">行情</span></li>
+        <li><a href="https://finance.yahoo.com/quote/TSM" target="_blank" rel="noopener">Yahoo Finance：TSM（ADR）</a> <span class="tag">行情</span></li>
+        <li><a href="https://investor.tsmc.com/chinese" target="_blank" rel="noopener">台積電投資人關係</a> <span class="tag">官方</span></li>
+        <li><a href="https://mops.twse.com.tw/" target="_blank" rel="noopener">公開資訊觀測站</a> <span class="tag">官方</span></li>
+        <li><a href="https://www.twse.com.tw/" target="_blank" rel="noopener">臺灣證券交易所</a> <span class="tag">官方</span></li>
+      </ul>
+    </section>
+
+    <!-- 區塊 4：連動標的 -->
+    <section class="block" id="related">
+      <h2>4. 連動標的</h2>
+      <ul>
+        <li><a href="nvidia.html">NVIDIA</a>：主要客戶之一，AI 晶片需求會影響先進製程訂單</li>
+        <li><a href="us-indices.html">美股主要指數</a>：費城半導體指數反映整體半導體族群的氣氛</li>
+        <li><a href="tx-night.html">台指期夜盤</a>：夜盤漲跌常反映市場對台積電隔日走勢的預期</li>
+      </ul>
+    </section>
+
+    <!-- 區塊 5：什麼時候有新數據 -->
+    <section class="block" id="timing">
+      <h2>5. 什麼時候有新數據</h2>
+      <ul>
+        <li><strong>台股收盤</strong>：每個交易日 13:30</li>
+        <li><strong>ADR 收盤</strong>：台灣時間清晨 5:00（美國夏令時間為 4:00）</li>
+        <li><strong>月營收</strong>：每月 10 日前公布上個月營收</li>
+        <li><strong>法說會</strong>：每季一次，通常在 1、4、7、10 月中旬</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>本站是個人做功課用的追蹤手冊，只整理「看什麼、去哪裡看」，不提供投資建議，也不預測漲跌。</p>
+  </footer>
+</body>
+</html>
